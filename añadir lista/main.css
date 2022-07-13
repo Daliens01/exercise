@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(66, 135, 196);
+    height: 8%;
+    width: 12%;
+    letter-spacing: 2px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.25s;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: rgb(73, 148, 214);
+    letter-spacing: 3px;
+
+    border-radius: 0px
+    
+}
+
+li{
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+    transition: 0.25s;
+    cursor: pointer;
+}
+div:hover{
+    box-shadow: 10px 15px 20px 1px rgb(97, 97, 97);
+    letter-spacing: 2px;
+
+}

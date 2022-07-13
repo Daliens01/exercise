@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+a{
+    transition: 0.25s;
+    font-family: sans-serif;
+    text-decoration: dashed;
+}
+
+a:hover{
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p{
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.25s;
+}
+
+p:hover{
+    box-shadow: 10px 0px 20px 0px grey;
+    padding: 2px;
+}
