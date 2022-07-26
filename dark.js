@@ -106,7 +106,8 @@ console.log("recursividad | Escribe un programa que invierta una cadena usando r
 const word = st =>{
   if(st.length < 0)return 
   console.log(st[st.length-1])
-  return word(st-1)
+  let a = st[st.length-1]
+  return word(a)
 }
 
-// word("ose")
+word("ose")
