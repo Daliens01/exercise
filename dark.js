@@ -126,7 +126,7 @@ console.log("recursividad ")
 const recursividad = st =>{
   if(st === 0)return 
   console.log(st)
-  return rec(st-1)
+  return recursividad(st-1)
 }
 
 recursividad(5)
