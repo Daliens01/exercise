@@ -1,8 +1,6 @@
 class Persona{
-    constructor(name,last,age){
-        this.name = name,
-        this.last = last,
-        this.age = age
+    constructor(){
+        
     }
 
     getName(){
@@ -55,11 +53,13 @@ class Alumno extends Persona{
 }
 
 const alumno = new Alumno
+const person = new Persona
 
 alumno.setName("heberto")
+person.setName("alex")
+
 alumno.setLast("ortiz")
 alumno.setAge(21)
 alumno.setMatricula(1283712)
 alumno.setGrupo("404")
-
 console.log(alumno.getAll())

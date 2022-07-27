@@ -1,3 +1,4 @@
+//arrays y sus funciones
 console.log("imprimir impuesto y añadirlo al array de objetos")
 const solution = (array) => array.map(i => ({...i,taxes: Math.trunc(i.price * 0.19)}))
 
@@ -83,23 +84,52 @@ pares([1, 3, 5])
 
 
 console.log("determinar si todos los elementos son par")
-const todos = array =>{
-  console.log(array.some((item) => item % 2 === 0))
-}
+const todos = array => console.log(array.every((item) => item % 2 === 0 ))
 
 todos([2, 4, 6, 8, 10]);
 todos([1, 3, 5, 7, 10, 11]);
 todos([1, 3, 5]);
 
+console.log("Resuelve si dentro de una lista de cartas tienes el AS")
+const as = (card)=> {
+  let cards = card.find((item) => item === "AS"); 
+  return cards|| false
+}
+
+console.log(as(['diamonds', 'hearts', 'spades', 'AS']))
+console.log(as(['diamonds', 'hearts', 'spades']))
+
+console.log("Retorna la posición de una llave dentro de una lista")
+const llave =(words)=>{
+  const index = words.findIndex((item) => item === 'myKey')
+  return index !== -1 ? index : false;
+}; 
+console.log(llave(["diamonds", "myKey", "spades", "AS"]))
+console.log(llave(["diamonds", "hearts", "spades"]))
+console.log(llave(["myKey", "hearts", "spades"]))
+
+console.log("Transforma un string y sepáralo por comas, como en un CSV")
+const csv = (words)=> console.log(words.join(","))
+csv(["amor", "sol", "piedra", "día"])
+csv(["diamonds", "hearts", "spades"])
+
+console.log("Construye una URL con base a un string")
+const url = (title)=> console.log(title.split(' ').join('-').toLowerCase())
+url("La forma de correr Python")
+url("La API para nunca parar de aprender")
+url("Curso de arrays")
+
+//recursividad
+
 console.log("recursividad ")
 
-const rec = st =>{
+const recursividad = st =>{
   if(st === 0)return 
   console.log(st)
   return rec(st-1)
 }
 
-rec(5)
+recursividad(5)
 
 console.log("recursividad | Escribe un programa que invierta una cadena usando recursión. ")
 
@@ -110,4 +140,4 @@ const word = st =>{
   return word(a)
 }
 
-word("ose")
+// word("ose")
